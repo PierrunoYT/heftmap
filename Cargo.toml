@@ -1,5 +1,5 @@
 [package]
-name = "diskcraft"
+name = "heftmap"
 version = "0.1.0"
 edition = "2024"
 description = "TreeSize-style disk usage analyzer"

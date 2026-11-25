@@ -14,11 +14,11 @@ use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 
 const USAGE: &str = "\
-DiskCraft - disk usage analyzer
+Heftmap - disk usage analyzer
 
 Usage:
-  diskcraft [PATH]                                   open the GUI (and scan PATH)
-  diskcraft --report PATH [--depth N] [--top N]      print a size-sorted tree
+  heftmap [PATH]                                     open the GUI (and scan PATH)
+  heftmap --report PATH [--depth N] [--top N]        print a size-sorted tree
 
 Options:
   --depth N   levels to print below PATH (default 2)

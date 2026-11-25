@@ -221,7 +221,7 @@ mod tests {
 
     #[test]
     fn aggregates_sizes_and_counts() {
-        let root = std::env::temp_dir().join(format!("diskcraft-test-{}", std::process::id()));
+        let root = std::env::temp_dir().join(format!("heftmap-test-{}", std::process::id()));
         let _ = fs::remove_dir_all(&root);
         fs::create_dir_all(root.join("a/b")).unwrap();
         fs::create_dir_all(root.join("empty")).unwrap();
@@ -257,7 +257,7 @@ mod tests {
 
     #[test]
     fn reports_allocated_size() {
-        let root = std::env::temp_dir().join(format!("diskcraft-alloc-{}", std::process::id()));
+        let root = std::env::temp_dir().join(format!("heftmap-alloc-{}", std::process::id()));
         let _ = fs::remove_dir_all(&root);
         fs::create_dir_all(&root).unwrap();
         // Large enough to live outside the NTFS MFT, so it occupies whole clusters/blocks.

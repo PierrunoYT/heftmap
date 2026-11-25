@@ -1,6 +1,6 @@
-<p align="center"><img src="assets/logo.png" alt="DiskCraft logo: a disk platter split into a colorful treemap" width="160"></p>
+<p align="center"><img src="assets/logo.png" alt="Heftmap logo: a disk platter split into a colorful treemap" width="160"></p>
 
-<h1 align="center">DiskCraft</h1>
+<h1 align="center">Heftmap</h1>
 
 <p align="center"><strong>See what fills your disk, folder by folder.</strong></p>
 
@@ -16,13 +16,13 @@
   <a href="CHANGELOG.md">Changelog</a>
 </p>
 
-DiskCraft is a free, open-source disk usage analyzer for Windows, Linux and macOS, in the spirit of
+Heftmap is a free, open-source disk usage analyzer for Windows, Linux and macOS, in the spirit of
 [TreeSize](https://www.jam-software.com/treesize_free) and written in Rust with
 [egui](https://github.com/emilk/egui). It scans a folder or drive in parallel and shows where the
 space went as a sortable folder tree, a treemap, a breakdown by file type and a list of the
 largest files.
 
-DiskCraft is one of the open-source desktop apps from [Pierruno](https://pierruno.dev/).
+Heftmap is one of the open-source desktop apps from [Pierruno](https://pierruno.dev/).
 
 ## Features
 
@@ -62,7 +62,7 @@ You need a recent stable [Rust toolchain](https://rustup.rs/).
 
 ```powershell
 cargo build --release
-.\target\release\diskcraft.exe
+.\target\release\heftmap.exe
 ```
 
 **Linux (Debian/Ubuntu)**
@@ -70,7 +70,7 @@ cargo build --release
 ```sh
 sudo apt install build-essential pkg-config libwayland-dev libxkbcommon-dev libxkbcommon-x11-0 xdg-utils zenity
 cargo build --release --locked
-./target/release/diskcraft "$HOME"
+./target/release/heftmap "$HOME"
 ```
 
 Run the GUI from a Wayland or X11 desktop session. `libxkbcommon-x11-0` is required
@@ -79,7 +79,7 @@ work when no desktop file chooser portal is available, and `xdg-utils` provides
 `xdg-open` for the file manager action. Report mode does not need a desktop session:
 
 ```sh
-./target/release/diskcraft --report "$HOME" --depth 2 --top 10
+./target/release/heftmap --report "$HOME" --depth 2 --top 10
 ```
 
 **macOS**
@@ -89,7 +89,7 @@ installed, run `xcode-select --install` first. Then, from the repository:
 
 ```sh
 cargo build --release --locked
-./target/release/diskcraft
+./target/release/heftmap
 ```
 
 The release build, native folder picker, and report mode were verified on Apple Silicon
@@ -98,10 +98,10 @@ The release build, native folder picker, and report mode were verified on Apple 
 ## Usage
 
 ```sh
-diskcraft                                          # open the GUI
-diskcraft D:\                                      # open the GUI and scan D:\
-diskcraft --report D:\Projects --depth 3 --top 15  # print a size-sorted tree
-diskcraft --help
+heftmap                                            # open the GUI
+heftmap D:\                                        # open the GUI and scan D:\
+heftmap --report D:\Projects --depth 3 --top 15    # print a size-sorted tree
+heftmap --help
 ```
 
 `--depth` sets the levels printed below the path (default 2), `--top` the largest entries per folder
@@ -109,7 +109,7 @@ diskcraft --help
 a `… N more` line:
 
 ```text
-D:\Github\Pierruno Apps\DiskCraft\src  84.4 KB (100.0 KB on disk)  (9 files, 0 folders)  scanned in 2.25ms
+D:\Github\Pierruno Apps\Heftmap\src  84.4 KB (100.0 KB on disk)  (9 files, 0 folders)  scanned in 2.25ms
       size    on disk
    33.5 KB    36.0 KB   36.0%  app.rs
     9.9 KB    12.0 KB   12.0%  scan.rs

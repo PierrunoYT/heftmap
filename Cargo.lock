@@ -699,20 +699,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f27ae1dd37df86211c42e150270f82743308803d90a6f6e6651cd730d5e1732f"
 
 [[package]]
-name = "diskcraft"
-version = "0.1.0"
-dependencies = [
- "chrono",
- "eframe",
- "egui",
- "egui_extras",
- "rayon",
- "rfd",
- "windows-sys 0.61.2",
- "winresource",
-]
-
-[[package]]
 name = "dispatch"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1443,6 +1429,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
 dependencies = [
  "foldhash 0.2.0",
+]
+
+[[package]]
+name = "heftmap"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "eframe",
+ "egui",
+ "egui_extras",
+ "rayon",
+ "rfd",
+ "windows-sys 0.61.2",
+ "winresource",
 ]
 
 [[package]]

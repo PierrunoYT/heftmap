@@ -24,7 +24,7 @@ const PAGE_ROWS: usize = 20;
 pub fn run(initial: Option<PathBuf>) -> eframe::Result {
     let options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()
-            .with_title("DiskCraft")
+            .with_title("Heftmap")
             .with_inner_size([1320.0, 820.0])
             .with_min_inner_size([720.0, 420.0])
             .with_icon(
@@ -34,7 +34,7 @@ pub fn run(initial: Option<PathBuf>) -> eframe::Result {
         ..Default::default()
     };
     eframe::run_native(
-        "DiskCraft",
+        "Heftmap",
         options,
         Box::new(move |cc| Ok(Box::new(App::new(&cc.egui_ctx, initial)))),
     )

@@ -8,7 +8,7 @@ All notable changes to this project are documented here. The format follows
 
 ### Added
 
-- DiskCraft: a TreeSize-style disk usage analyzer (egui) for Windows, Linux and macOS.
+- Heftmap: a TreeSize-style disk usage analyzer (egui) for Windows, Linux and macOS.
 - App logo (a disk platter split into a colorful treemap), shown in the window and taskbar and
   embedded in the Windows `.exe` by `build.rs`.
 - Parallel directory scanner (rayon) with live progress (files, folders, bytes, current path)
@@ -35,7 +35,7 @@ All notable changes to this project are documented here. The format follows
 - **🛡 Restart as administrator** (Windows) next to the count of unreadable folders: relaunches
   through UAC and rescans the same folder. Elevated scans enable the backup privilege
   (`SeBackupPrivilege`), so folders whose ACLs exclude administrators are listed as well.
-- Report mode: `diskcraft --report PATH [--depth N] [--top N]` prints a size-sorted tree with
+- Report mode: `heftmap --report PATH [--depth N] [--top N]` prints a size-sorted tree with
   size, size on disk and % of parent; `--help` prints usage. A bare drive such as `C:` means its
   root.
 - Release builds on Windows run without a console window; report mode attaches to the calling
